@@ -1,6 +1,8 @@
 <h1 align="center"><strong>Eau Claire's Salon</strong></h1>
 
 <h4 align="center"><em>A Hair Salon employee portal and associated SQL database that stores Stylist and Client information</em></h4>
+
+
 ##### __Created:__ 7/31/2020
 ##### __Last Updated:__ 7/31/2020 
 ##### By _**Tyson Lackey**_  
