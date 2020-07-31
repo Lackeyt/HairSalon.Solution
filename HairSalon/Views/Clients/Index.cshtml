@@ -5,17 +5,27 @@
 @using HairSalon.Models
 @model List<HairSalon.Models.Client>
 
-  <h1>Clients</h1>
-  @if (Model.Count == 0)
-  {
-    <p>No clients have been added to the system</p>
-  }
+<h1>Clients</h1>
+@if (Model.Count == 0)
+{
+  <p>No clients have been added to the system</p>
+  @Html.ActionLink("New Client", "Create")
 
+  <div class="bottom">
+    <p>@Html.ActionLink("View Stylists", "Index", "Stylists") || @Html.ActionLink("Home", "Index", "Home")</p>
+  </div>
+}
+else
+{
   <ul>
-    @foreach (Client client in Model)
-    {
-      <li>@Html.ActionLink($"{@client.Name}", "Show", new {id = client.ClientId})</li>
-    }
+  @foreach (Client client in Model)
+  {
+    <li>@Html.ActionLink($"{@client.Name}", "Show", new {id = client.ClientId})</li>
+  }
   </ul>
 
-  <p>@Html.ActionLink("New Client", "Create") || @Html.ActionLink("View Stylists", "Index", "Stylists") || @Html.ActionLink("Home", "Index", "Home")</p>
+  <div class="container-fluid bottom">
+    <p>@Html.ActionLink("New Client", "Create") || @Html.ActionLink("View Stylists", "Index", "Stylists") || @Html.ActionLink("Home", "Index", "Home")</p>
+  </div>
+}
+
