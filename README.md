@@ -1,6 +1,6 @@
-<h1 align="center">  _Eau Claire's Salon_ </h1>
+<h1 align="center"><strong>Eau Claire's Salon</strong></h1>
 
-#### _A Hair Salon employee portal and associated SQL database that stores Stylist and Client information_
+<h4 align="center"><em>A Hair Salon employee portal and associated SQL database that stores Stylist and Client information</em></h4>
 ##### __Created:__ 7/31/2020
 ##### __Last Updated:__ 7/31/2020 
 ##### By _**Tyson Lackey**_  
@@ -8,7 +8,7 @@
 
 ## Description
 
-_A SQL database stores Stylist details and their many Client records. The program can allow a user to create, edit, delete, and view Sylist records and their associated Clients, as well as Clients and their parent Stylist. _
+A SQL database stores Stylist details and their many Client records. The program can allow a user to create, edit, delete, and view Sylist records and their associated Clients, as well as Clients and their parent Stylist.
 
 ## Behaviors
 
