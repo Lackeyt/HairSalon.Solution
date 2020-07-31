@@ -16,7 +16,7 @@
       @Html.EditorFor(model => model.About, new{@class="form-control"})
       <br>
       <input type="submit" value="Save" class="btn btn-secondary" />
-      <input type="button" value="Cancel" onclick="location.href='@Url.Action("Index", "Stylists", new {id = Model.StylistId})';" class="btn btn-secondary" />
+      <input type="button" value="Cancel" onclick="location.href='@Url.Action("Show", "Stylists", new {id = Model.StylistId})';" class="btn btn-secondary" />
     </div>
   }
 
