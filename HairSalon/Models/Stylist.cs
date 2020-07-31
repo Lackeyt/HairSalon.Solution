@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System;
 
 namespace HairSalon.Models
 {
@@ -14,7 +15,7 @@ namespace HairSalon.Models
     public string Name { get; set; }
     public string Details { get; set; }
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public Datetime HireDate { get; set; }
+    public DateTime HireDate { get; set; }
     public virtual ICollection<Client> Clients { get; set; }
   }
 }
