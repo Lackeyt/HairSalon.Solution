@@ -4,15 +4,17 @@
 
 @model HairSalon.Models.Stylist
 
-<div class="container-fluid">
-  <h1>Are you sure you want to remove this stylist?</h1>
+
+<h1>Are you sure you want to remove this stylist?</h1>
+<div class="container centerContent">
   <br>
-  <h5><strong>Name: </strong>@Html.DisplayFor(model => model.Name)</h5>
+  <h5 class="deleteName"><strong>Name: </strong>@Html.DisplayFor(model => model.Name)</h5>
   @using (Html.BeginForm())
   {
     <input type="submit" value="Delete" class = "btn btn-secondary"/>
     <input type="button" value="Cancel" onclick="location.href='@Url.Action("Show", "Stylists", new {id = Model.StylistId})';" class="btn btn-secondary" />
   }
+  <br>
 
   <div class="bottom">
     <p>@Html.ActionLink("Clients", "Index", "Clients") || @Html.ActionLink("Stylists", "Index") || @Html.ActionLink("Home", "Index", "Home")</p>
