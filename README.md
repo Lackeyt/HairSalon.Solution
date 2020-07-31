@@ -27,13 +27,39 @@ _A SQL database stores Stylist details and their many Client records. The progra
 ## Setup/Installation Requirements
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Configue MySQL Workbench Database:
-1. Launch MySQL Workbench
-2. Select "Create a new SQL tab for executing queries"
+1. Launch MySQL Workbench (Steps 2-5 can be skipped as long as the first 2 lines in step 7 are included)
+2. Select "Create a new schema in the connected server"
+![NewQuery](./HairSalon/wwwroot/assets/images/readme/CreateSchema.PNG)
+3. Name the schema "tyson_lackey" and click "apply"
+![NewQuery](./HairSalon/wwwroot/assets/images/readme/NameSchema.PNG)
+4. Click "apply" to confirm schema creation
+![NewQuery](./HairSalon/wwwroot/assets/images/readme/ConfirmNewSchema.PNG)
+5. Under the Schemas tab in the Navigator, double-click on the newly created Schema
+![NewQuery](./HairSalon/wwwroot/assets/images/readme/SelectSchema.PNG)
+6. Select "Create a new SQL tab for executing queries"
 ![NewQuery](./HairSalon/wwwroot/assets/images/readme/NewQuery.PNG)
-3. Enter the following SQL into the query window and click "execute"
+7. Enter the following SQL into the query window and click "execute"
 
 ```
+DROP DATABASE IF EXISTS tyson_lackey;
+CREATE DATABASE tyson_lackey;
 
+CREATE TABLE `clients` (
+  `ClientId` int NOT NULL AUTO_INCREMENT,
+  `StylistId` int NOT NULL DEFAULT '0',
+  `Name` varchar(45) NOT NULL DEFAULT 'Anonymous',
+  `PhoneNumber` int DEFAULT NULL,
+  `HairStyle` text,
+  PRIMARY KEY (`ClientId`)
+);
+
+CREATE TABLE `stylists` (
+  `StylistId` int NOT NULL AUTO_INCREMENT,
+  `Name` varchar(45) NOT NULL DEFAULT '-Redacted-',
+  `About` text,
+  `HireDate` date NOT NULL DEFAULT (curdate()),
+  PRIMARY KEY (`StylistId`)
+);
 ```
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open via Bash/GitBash:
