@@ -5,7 +5,11 @@
 @using HairSalon.Models
 @model List<HairSalon.Models.Client>
 
-<h1 class="jumbotron">Clients</h1>
+<h1 class="jumbotron">
+  Clients
+  <p>@Html.ActionLink("Stylists", "Index", "Stylists") || @Html.ActionLink("Home", "Index", "Home")</p>
+</h1>
+
 <div class="container ">
   <br>
   <p><strong>Choose a Client</strong></p>
@@ -13,25 +17,17 @@
   {
     <p>No clients have been added to the system</p>
     <input type="button" value="New Client" onclick="location.href='@Url.Action("Create", "Clients")';" class="btn btn-secondary" />
-
-    <div class="bottom">
-      <p>@Html.ActionLink("View Stylists", "Index", "Stylists") || @Html.ActionLink("Home", "Index", "Home")</p>
-    </div>
   }
   else
   {
     <ul>
     @foreach (Client client in Model)
     {
-      <li>@Html.ActionLink($"{@client.Name}", "Show", new {id = client.ClientId})</li>
+      <li><p>@Html.ActionLink($"{@client.Name}", "Show", new {id = client.ClientId})</p></li>
     }
     </ul>
     <br>
     <input type="button" value="New Client" onclick="location.href='@Url.Action("Create", "Clients")';" class="btn btn-secondary" />
-
-    <div class="bottom">
-      <p>@Html.ActionLink("Stylists", "Index", "Stylists") || @Html.ActionLink("Home", "Index", "Home")</p>
-    </div>
   }
 </div>
 

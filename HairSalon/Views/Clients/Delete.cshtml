@@ -5,7 +5,10 @@
 @model HairSalon.Models.Client
 
 
-<h1 class="jumbotron">Are you sure you want to delete this client?</h1>
+<h1 class="jumbotron">
+  Delete Client
+  <p>@Html.ActionLink("Clients", "Index") || @Html.ActionLink("Stylists", "Index", "Stylists") || @Html.ActionLink("Home", "Index", "Home")</p>
+</h1>
 <div class="container centerContent">
   <br>
   <h5 class="deleteName"><strong>Name: </strong>@Html.DisplayFor(model => model.Name)</h5>
@@ -14,8 +17,4 @@
     <input type="submit" value="Delete" class = "btn btn-secondary"/>
     <input type="button" value="Cancel" onclick="location.href='@Url.Action("Show", "Clients", new {id = Model.ClientId})';" class="btn btn-secondary" />
   }
-
-  <div class="bottom">
-    <p>@Html.ActionLink("Clients", "Index") || @Html.ActionLink("Stylists", "Index", "Stylists") || @Html.ActionLink("Home", "Index", "Home")</p>
-  </div>
 </div>

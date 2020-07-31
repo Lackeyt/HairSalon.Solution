@@ -13,10 +13,7 @@ h1 {
 
 .bottom {
   font-size: 20px;
-  bottom: 5%;
-  left: 44%;
-  position: fixed;
-  text-align: center;
+  /* text-align: center; */
 }
 
 html{
@@ -55,4 +52,8 @@ ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+p{
+  font-size: 2rem;
 }

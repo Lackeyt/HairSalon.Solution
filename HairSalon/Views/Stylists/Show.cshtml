@@ -5,8 +5,11 @@
 @using HairSalon.Models;
 @model HairSalon.Models.Stylist;
 
-<h1 class="jumbotron">Stylist Details:</h1>
-<div class="container">
+<h1 class="jumbotron">
+  Stylist Details:
+  <p>@Html.ActionLink("Clients", "Index", "Clients") || @Html.ActionLink("Stylists", "Index") || @Html.ActionLink("Home", "Index", "Home")</p>
+</h1>
+<div class="container centerContent">
   <h5><strong>Name:</strong> @Html.DisplayFor(model => model.Name)</h5>
   <h5><strong>About:</strong> @Html.DisplayFor(model => model.About)</h5>
   <h5><strong>Hire Date:</strong> @Html.DisplayFor(model => model.HireDate)</h5>
@@ -25,8 +28,4 @@
     <input type="button" value="Edit" onclick="location.href='@Url.Action("Edit", "Stylists", new {id = Model.StylistId})';" class="btn btn-secondary" />
     <input type="button" value="Delete" onclick="location.href='@Url.Action("Delete", "Stylists", new {id = Model.StylistId})';" class="btn btn-secondary" />
   </h5>
-
-  <div class="bottom">
-    <p>@Html.ActionLink("Clients", "Index", "Clients") || @Html.ActionLink("Stylists", "Index") || @Html.ActionLink("Home", "Index", "Home")</p>
-  </div>
 </div>  
