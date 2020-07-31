@@ -11,4 +11,9 @@ h1 {
   font-size: 20px;
   bottom: 5%;
   position: fixed;
+  text-align: center;
+}
+
+body{
+  background-image: url('~/assets/images/readme/NewQuery.PNG');
 }
