@@ -1,4 +1,4 @@
-#  _Eau Claire's Salon_
+<h1 align="center">  _Eau Claire's Salon_ </h1>
 
 #### _A Hair Salon employee portal and associated SQL database that stores Stylist and Client information_
 ##### __Created:__ 7/31/2020
