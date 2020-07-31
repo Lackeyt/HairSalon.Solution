@@ -1,3 +1,30 @@
 @{
   Layout = "_Layout";
 }
+
+@model HairSalon.Models.Client;
+
+<h1>Edit Client:</h1>
+<div class="container-fluid">
+  @using (Html.BeginForm())
+  {
+    <div class ="form-group">
+      @Html.HiddenFor(model => model.ClientId)
+      <h4>Name</h4>
+      @Html.EditorFor(model => model.Name, new{@class="form-control"})
+      <h4>PhoneNumber</h4>
+      @Html.EditorFor(model => model.PhoneNumber, new{@class="form-control"})
+      <h4>HairStyle</h4>
+      @Html.EditorFor(model => model.HairStyle, new{@class="form-control"})
+      <h4>Stylist</h4>
+      @Html.DropDownList("StylistId", null, new{@class="form-control"})
+      <br>
+      <input type="submit" value="Save" class="btn btn-secondary" />
+      <input type="button" value="Cancel" onclick="location.href='@Url.Action("Show", "Clients", new {id = Model.ClientId})';" class="btn btn-secondary" />
+    </div>
+  }
+
+  <div class="bottom">
+    <p>@Html.ActionLink("Clients", "Index") || @Html.ActionLink("View Stylists", "Index", "Stylists") || @Html.ActionLink("Home", "Index", "Home")</p>
+  </div>
+</div>
