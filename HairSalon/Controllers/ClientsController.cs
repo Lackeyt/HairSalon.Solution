@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using HairSalon.Models;
 using System.Linq;
 
-namespace HairSalon.Controllers{
+namespace HairSalon.Controllers
+{
   public class ClientsController : Controller
   {
     private readonly HairSalonContext _db;
@@ -23,6 +24,7 @@ namespace HairSalon.Controllers{
 
     public ActionResult Create()
     {
+      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
       return View();
     }
 

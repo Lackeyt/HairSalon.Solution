@@ -9,6 +9,7 @@ namespace HairSalon.Models
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public string Name { get; set; }
     public int PhoneNumber { get; set; }
+    public string HairStyle { get; set; }
     public virtual Stylist Stylist { get; set; }
   }
 }
