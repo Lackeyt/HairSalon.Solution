@@ -59,15 +59,14 @@ CREATE TABLE `stylists` (
 1. Clone this repository onto your computer:
     "git clone https://github.com/Lackeyt/HairSalon.Solution"
 2. Navigate into the "HairSalon.Solution" directory in Visual Studio Code or preferred text editor:
-3. Open the project
-    "code ."
+3. Open the project by typing "code ." while in the previous directory in your terminal.
 4. Open your computer's terminal and navigate to the directory bearing the name of the program and containing the top level subdirectories and files.
 5. Enter the command "dotnet build" in the terminal and press "Enter".
 6. Enter the command "dotnet watch run" in the terminal and press "Enter".
 
 ## Known Bugs
 
-* 
+* Front end error handling for null values submitted with forms not in place. (currently just assigned default values in the database)
 
 ## Support and contact details
 
