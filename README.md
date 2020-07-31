@@ -14,7 +14,14 @@ _A SQL database stores Stylist details and their many Client records. The progra
 
 | Spec| Example input | Example Output
 | ----------- | ----------- | ----------- |
-||||
+|The program takes a user input of Client Name, Phone Number, and Hair Style and save it to the clients database table | "Name: Tyson, Phone Number: 5555555555, Hair Style: Buzz Cut"| n/a |
+|The program user to edit Client Name, Phone Number, and Hair Style and update the associated record in the clients database table | "Name: Tyson Lackey, Phone Number: 5555555554, Hair Style: high and tight"| n/a |
+|The program user to delete a client record Client Name, Phone Number, and Hair Style from the clients database table | n/a | n/a |
+|The program takes a user input of Stylist Name and About and save it to the stylists database table | "Name: Steve, About: 5+ years of experience, mainly cut men's hair" | n/a |
+|The program user to edit Stylist Name and About and update the associated record in the stylists database table | "Name: Tyson Lackey, About: 6+ years of experience, mainly cut men's hair"| n/a |
+|The program user to delete a Stylist record Stylist Name and About from the stylists database table | n/a | n/a |
+|The program displays all associated clients for a stylist | n/a | n/a |
+|The program displays the associated stylist for a client | n/a | n/a |
 
 
 ## Setup/Installation Requirements
@@ -44,8 +51,6 @@ _A SQL database stores Stylist details and their many Client records. The progra
 
 * 
 
-## Feature Roadmap
-
 ## Support and contact details
 
 * Discord: TysonL#4409
@@ -63,10 +68,6 @@ _A SQL database stores Stylist details and their many Client records. The progra
 * MySQL Workbench
 * Entity Framework
 * .NET Core
-
-## Resources:
-
-* 
 
 ### License
 
