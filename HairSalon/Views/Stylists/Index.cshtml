@@ -19,11 +19,11 @@
     else
     {
       <br>
-      <p><strong>Choose your Stylist:</strong></p>
+      <p><strong>Choose a Stylist:</strong></p>
       <ul>
         @foreach (Stylist stylist in Model)
         {
-          <li>@Html.ActionLink($"{@stylist.Name}", "Show", new {id = stylist.StylistId})</li>
+          <li><p>@Html.ActionLink($"{@stylist.Name}", "Show", new {id = stylist.StylistId})</p></li>
         }
       </ul>
       <br>

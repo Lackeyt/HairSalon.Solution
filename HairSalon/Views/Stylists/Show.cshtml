@@ -12,7 +12,7 @@
 <div class="container centerContent">
   <h5><strong>Name:</strong> @Html.DisplayFor(model => model.Name)</h5>
   <h5><strong>About:</strong> @Html.DisplayFor(model => model.About)</h5>
-  <h5><strong>Hire Date:</strong> @Html.DisplayFor(model => model.HireDate)</h5>
+  <h5><strong>Hire Date:</strong> @Html.ValueFor(model => model.HireDate, "{0:MM/dd/yyyy}")</h5>
   <h5><strong>Clients:</strong></h5>
   <ul>
     @if(Model.Clients.Count == 0)
