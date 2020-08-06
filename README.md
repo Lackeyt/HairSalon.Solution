@@ -37,6 +37,7 @@ A SQL database stores Stylist details and their many Client records. The program
 ```
 DROP DATABASE IF EXISTS tyson_lackey;
 CREATE DATABASE tyson_lackey;
+USE tyson_lackey;
 
 CREATE TABLE `clients` (
   `ClientId` int NOT NULL AUTO_INCREMENT,
