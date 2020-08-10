@@ -57,6 +57,21 @@ CREATE TABLE `stylists` (
 );
 ```
 
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Configue MySQL Workbench Database using database import:
+1. In the Administration window of SQL Workbench, select 'Data Import/Restore'
+![DataImportRestore](./HairSalon/wwwroot/assets/images/readme/DataImportRestore.PNG)
+2. Select 'Import from self-contained file" from the data import window.
+![ImportSelfContainedFile](./HairSalon/wwwroot/assets/images/readme/ImportSelfContainedFile.PNG)
+3. Navigate to the file path titled tyson_lackey.sql in the Solution file.
+![ImportFilePath](./HairSalon/wwwroot/assets/images/readme/ImportFilePath.PNG)
+4. Under 'Default Schema to be Imported To', click the "new" button.
+![SelectNew](./HairSalon/wwwroot/assets/images/readme/SelectNew.PNG)
+5. Name the schema 'tyson_lackey' and click "ok"
+![NameSchema](./HairSalon/wwwroot/assets/images/readme/NameSchema.PNG)
+6. Click 'Start Import'
+![StartImport](./HairSalon/wwwroot/assets/images/readme/StartImport.PNG)
+
+
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open via Bash/GitBash:
 
 1. Clone this repository onto your computer:
@@ -75,7 +90,6 @@ CREATE TABLE `stylists` (
 
 * Discord: TysonL#4409
 * Email: lackeyt90@gmail.com
-
 
 ## Technologies Used
 
