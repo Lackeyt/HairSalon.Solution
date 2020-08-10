@@ -80,6 +80,7 @@ CREATE TABLE `stylists` (
 ![NameSchema](./HairSalon/wwwroot/assets/images/readme/NameSchema.PNG)
 6. Click 'Start Import'
 ![StartImport](./HairSalon/wwwroot/assets/images/readme/StartImport.PNG)
+7. reopen the schemas tab, right click and select "refresh all".
 
 ## Known Bugs
 
